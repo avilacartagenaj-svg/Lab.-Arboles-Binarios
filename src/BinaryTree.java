@@ -146,7 +146,7 @@ public class BinaryTree {
         return Math.max(label(node, withFactors).length(),
                 Math.max(maxLength(node.left, withFactors), maxLength(node.right, withFactors)));
     }
-    
+
     private void put(List<StringBuilder> rows, int r, int c, String s) {
         while (rows.size() <= r) {
             rows.add(new StringBuilder());
